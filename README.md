@@ -95,5 +95,5 @@ vue-better-calendar是一个基于vue的日期选择插件，它提供了四种�
 |名称|描述|
 |:-:|:-:|
 |setToday|选中当天日期|
-|resetRangDate|范围选择模式下，重置已选择的日期范围|
 |sign|单独通过按钮点击进行签到，会触发select-sign-date事件|
+|clearMultiPanel|多选模式清空全部所选日期，clearMultiPanel可清空selectedMultiDays返回值|
