@@ -853,6 +853,13 @@
           day && (day.selected = true)
         })
       },
+      clearMultiPanel(){
+        if (this.mode === MULTI_MODE){
+          this.multiDays = []
+          let selectedMultiDays = [];
+          this.$emit(EVENT_SELECT_MULTI_DATE, selectedMultiDays);
+        }
+      },
       // 取消选择
       resetRangDate() {
         this.beginDate = []
