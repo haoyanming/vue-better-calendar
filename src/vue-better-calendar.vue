@@ -63,7 +63,7 @@
                  <p v-if="showLunar" class="text text-fest-day" :class="{'is-special-day': k2 === 0 || k2 === 6,'is-lunar': date.isLunarFestival, 'is-gregorian': date.isGregorianFestival}">
                    {{date.lunar}}
                  </p>
-                 <p class="text text-custom-day event_name_color" v-if="date.eventName">
+                 <p class="text text-custom-day" style="color:#409EFF" v-if="date.eventName">
                    {{date.eventName.title}}
                  </p>
                </template>
@@ -74,7 +74,7 @@
                  <p v-if="showLunar" class="text text-fest-day" :class="{'is-special-day': k2 === 0 || k2 === 6, 'is-lunar': date.isLunarFestival, 'is-gregorian': date.isGregorianFestival}">
                    {{date.lunar}}
                  </p>
-                 <p class="text text-custom-day event_name_color" v-if="date.eventName">
+                 <p class="text text-custom-day" style="color:#409EFF" v-if="date.eventName">
                    {{date.eventName.title}}
                  </p>
                </template>
@@ -853,11 +853,11 @@
           day && (day.selected = true)
         })
       },
-      clearMultiPanel(){
-        if (this.mode === MULTI_MODE){
+      clearMultiPanel() {
+        if (this.mode === MULTI_MODE) {
           this.multiDays = []
-          let selectedMultiDays = [];
-          this.$emit(EVENT_SELECT_MULTI_DATE, selectedMultiDays);
+          let selectedMultiDays = []
+          this.$emit(EVENT_SELECT_MULTI_DATE, selectedMultiDays)
         }
       },
       // 取消选择
@@ -960,9 +960,6 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  .event_name_color{
-    color:#409EFF
-  }
   .vue-better-calendar
     position: relative
     min-width:300px
