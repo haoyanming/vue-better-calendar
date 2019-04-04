@@ -1030,6 +1030,7 @@
         &.calendar-weeks_hide
           display:none
         ul
+          padding-left:0
           display:flex
           width:100%
           overflow:hidden
@@ -1052,6 +1053,7 @@
           ul
             display:flex
             list-style:none
+            padding-left:0
             width:100%
             overflow:hidden
             .calendar-day
