@@ -1033,6 +1033,7 @@
           display:flex
           width:100%
           overflow:hidden
+          list-style:none
           .weekday
             flex:1
             box-sizing:border-box
@@ -1050,6 +1051,7 @@
             padding-top:2px
           ul
             display:flex
+            list-style:none
             width:100%
             overflow:hidden
             .calendar-day
