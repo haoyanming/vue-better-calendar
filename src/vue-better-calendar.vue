@@ -1017,6 +1017,7 @@
                 width:100%
                 text-align:center
                 font-size:14px
+                list-style:none
           .year
             width:100px
             margin:0 auto
@@ -1039,6 +1040,7 @@
             text-align:center
             font-size:14px
             padding:15px
+            list-style none
       .calendar-dates
         position: relative
         background-color: #eeeeee
@@ -1060,6 +1062,7 @@
               padding:10px 5px
               border-radius:4px
               background-color: #fff
+              list-style:none
               &:first-of-type
                 margin-left:2px
               &.disabled
